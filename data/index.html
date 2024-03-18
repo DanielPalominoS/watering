@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Autonomous Watering System</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h2>Activaciones por día</h2>
+            <label for="activationsInput">Number of Activations (max 10):</label>
+            <input type="number" id="activationsInput" max="10" min="1">
+            <button onclick="updateActivations()">Update</button>
+        </div>
+        <div>
+            <h2>Tiempo activo</h2>
+            <!-- <label for="hoursInput">Hours:</label>
+            <input type="number" id="hoursInput" max="23" min="0"> -->
+            <label for="minutesInput">Minutes:</label>
+            <input type="number" id="minutesInput" max="59" min="0">
+            <button onclick="updateActiveTime()">Update</button>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <h2>Activar manualmente</h2>
+            <button onclick="manualTrigger()">Activate Manual Trigger</button>
+        </div>
+        <div>
+            <h2>Valve State</h2>
+            <p> State is : <span id="ValveState">NA</span></p>
+            <p> Temperature : <span id="Temperature">NA</span></p>
+
+        </div>
+    </div>
+    <script src="\script.js"></script>
+</body>
+
+</html>
